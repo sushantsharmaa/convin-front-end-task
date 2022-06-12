@@ -1,0 +1,15 @@
+.userInfo-main {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+}
+
+.userInfo-left img {
+  border-radius: 5px;
+}
+
+.userInfo-right h2 {
+  text-align: left;
+}
