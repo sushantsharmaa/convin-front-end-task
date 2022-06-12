@@ -1,4 +1,3 @@
-import "./app.css";
 import { useEffect } from "react";
 import Home from "./components/Home/Home";
 import { useDispatch, useSelector } from "react-redux";
@@ -14,14 +13,22 @@ function App() {
 
   if (isLoading) {
     return (
-      <div className="loading">
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          fontSize: "4rem",
+        }}
+      >
         <h1>Loading...</h1>
       </div>
     );
   }
 
   return (
-    <div className="app">
+    <div>
       <Home />
     </div>
   );
